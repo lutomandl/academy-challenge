@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
   <title>Get Your &lt;head&gt; Straight</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="styles/generics.css" />
+  <!--/* <link rel="stylesheet" href="styles/index.css" /> */-->
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/elements.css" />
   <link
     rel="preload"
     href="image-tree.avif"
     as="image"
     fetchpriority = "high"
     media="(min-width: 45em) and (max-width: 63.9375em)">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -122,26 +125,50 @@
 
   <main>
     <section class="hero">
-      <img width="1920" height="722" data-src="banner.png" alt="" class="hero__img">
+      <img srcset="banner-750.avif 750w, banner-1100.avif 1100w, banner-1320.avif 1320w, banner-1920.avif 1920w"
+        sizes="(max-width: 1920px) 750px, 1100px, 1320px, 1920px"
+        src="banner-1920.avif"
+        width="1920" 
+        height="722" 
+        alt="" 
+        class="hero__img">
     </section>
     <!--/* <script src="script/hero.js"></script> */-->
 
     <section class="gridbox">
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.avif" alt="" class="card__img" width="1920" height="1280">
+          <img srcset="image-tree-650.avif 650w, image-tree-900.avif 900w, image-tree-1100.avif 1100w"
+            sizes="(max-width: 1100px) 650px, 900px, 1100px"
+            src="banner-1100.avif" 
+            alt="" 
+            class="card__img" 
+            width="1920" 
+            height="1280">
           <hr>
         </section>
       </article>
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.avif" alt="" class="card__img" width="1920" height="1280">
+        <img srcset="image-tree-650.avif 650w, image-tree-900.avif 900w, image-tree-1100.avif 1100w"
+        sizes="(max-width: 1100px) 650px, 900px, 1100px"
+        src="banner-1100.avif" 
+        alt="" 
+        class="card__img" 
+        width="1920" 
+        height="1280">
           <hr>
         </section>
       </article>
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.avif" alt="" class="card__img" width="1920" height="1280">
+        <img srcset="image-tree-650.avif 650w, image-tree-900.avif 900w, image-tree-1100.avif 1100w"
+        sizes="(max-width: 1100px) 650px, 900px, 1100px"
+        src="banner-1100.avif" 
+        alt="" 
+        class="card__img" 
+        width="1920" 
+        height="1280">
           <hr>
         </section>
       </article>
@@ -152,57 +179,117 @@
       </article>
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.avif" alt="" class="card__img" width="1920" height="1280">
+        <img srcset="image-tree-650.avif 650w, image-tree-900.avif 900w, image-tree-1100.avif 1100w"
+        sizes="(max-width: 1100px) 650px, 900px, 1100px"
+        src="banner-1100.avif" 
+        alt="" 
+        class="card__img" 
+        width="1920" 
+        height="1280">
           <hr>
         </section>
       </article>
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.avif" alt="" class="card__img" width="1920" height="1280">
+        <img srcset="image-tree-650.avif 650w, image-tree-900.avif 900w, image-tree-1100.avif 1100w"
+        sizes="(max-width: 1100px) 650px, 900px, 1100px"
+        src="banner-1100.avif" 
+        alt="" 
+        class="card__img" 
+        width="1920" 
+        height="1280">
           <hr>
         </section>
       </article><article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.avif" alt="" class="card__img" width="1920" height="1280">
+        <img srcset="image-tree-650.avif 650w, image-tree-900.avif 900w, image-tree-1100.avif 1100w"
+        sizes="(max-width: 1100px) 650px, 900px, 1100px"
+        src="banner-1100.avif" 
+        alt="" 
+        class="card__img" 
+        width="1920" 
+        height="1280">
           <hr>
         </section>
       </article>
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.avif" alt="" class="card__img" width="1920" height="1280">
+          <img srcset="image-tree-650.avif 650w, image-tree-900.avif 900w, image-tree-1100.avif 1100w"
+            sizes="(max-width: 1100px) 650px, 900px, 1100px"
+            src="banner-1100.avif" 
+            alt="" 
+            class="card__img" 
+            width="1920" 
+            height="1280">
           <hr>
         </section>
       </article><article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.avif" alt="" class="card__img" width="1920" height="1280">
+          <img srcset="image-tree-650.avif 650w, image-tree-900.avif 900w, image-tree-1100.avif 1100w"
+            sizes="(max-width: 1100px) 650px, 900px, 1100px"
+            src="banner-1100.avif" 
+            alt="" 
+            class="card__img" 
+            width="1920" 
+            height="1280">
           <hr>
         </section>
       </article>
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.avif" alt="" class="card__img" width="1920" height="1280">
+          <img srcset="image-tree-650.avif 650w, image-tree-900.avif 900w, image-tree-1100.avif 1100w"
+            sizes="(max-width: 1100px) 650px, 900px, 1100px"
+            src="banner-1100.avif" 
+            alt="" 
+            class="card__img" 
+            width="1920" 
+            height="1280">
           <hr>
         </section>
       </article><article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.avif" alt="" class="card__img" width="1920" height="1280">
+          <img srcset="image-tree-650.avif 650w, image-tree-900.avif 900w, image-tree-1100.avif 1100w"
+            sizes="(max-width: 1100px) 650px, 900px, 1100px"
+            src="banner-1100.avif" 
+            alt="" 
+            class="card__img" 
+            width="1920" 
+            height="1280">
           <hr>
         </section>
       </article>
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.avif" alt="" class="card__img" width="1920" height="1280">
+          <img srcset="image-tree-650.avif 650w, image-tree-900.avif 900w, image-tree-1100.avif 1100w"
+            sizes="(max-width: 1100px) 650px, 900px, 1100px"
+            src="banner-1100.avif" 
+            alt="" 
+            class="card__img" 
+            width="1920" 
+            height="1280">
           <hr>
         </section>
       </article><article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.avif" alt="" class="card__img" width="1920" height="1280">
+          <img srcset="image-tree-650.avif 650w, image-tree-900.avif 900w, image-tree-1100.avif 1100w"
+            sizes="(max-width: 1100px) 650px, 900px, 1100px"
+            src="banner-1100.avif" 
+            alt="" 
+            class="card__img" 
+            width="1920" 
+            height="1280">
           <hr>
         </section>
       </article>
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.avif" alt="" class="card__img" width="1920" height="1280">
+          <img srcset="image-tree-650.avif 650w, image-tree-900.avif 900w, image-tree-1100.avif 1100w"
+            sizes="(max-width: 1100px) 650px, 900px, 1100px"
+            src="banner-1100.avif" 
+            alt="" 
+            class="card__img" 
+            width="1920" 
+            height="1280">
           <hr>
         </section>
       </article>
