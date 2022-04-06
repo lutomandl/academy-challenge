@@ -26,5 +26,6 @@ footer {
 
 img,
 iframe {
+  height: auto;
   width: 100%;
 }
